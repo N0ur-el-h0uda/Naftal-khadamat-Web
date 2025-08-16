@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naftal Khadamat — Trouvez votre station la plus proche</title>
+  <meta name="description" content="Naftal Khadamat : géolocalisez les stations, consultez les services et profitez d'une expérience rapide et intuitive partout en Algérie." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" type="image/png" href="img/Logo.png" />
+</head>
+<body>
+  <a class="skip-link" href="#accueil">Aller au contenu</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+      <a class="logo" href="#accueil" aria-label="Naftal Khadamat">
+        <img src="img/Logo.png" alt="Logo Naftal Khadamat" />
+      </a>
+
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Ouvrir le menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <div id="primaryNav" class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#download">Téléchargement</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-pill btn-primary" href="https://play.google.com/store/apps/details?id=com.naftal.apps.naftalkhadamat&hl=fr" target="_blank" rel="noopener">Télécharger</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="accueil" class="hero" role="main" aria-label="Section d'accueil">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content container">
+      <h1>Naftal Khadamat</h1>
+      <p>Trouvez votre station la plus proche à tout moment, où que vous soyez.</p>
+      <div class="hero-cta">
+        <button class="btn btn-contrast" id="findStationBtn">
+          <i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i>
+          Trouver une station
+        </button>
+        <a class="btn btn-outline" href="#services">Voir nos services</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- À Propos -->
+  <section id="about" class="section-card container about-section">
+    <div class="about-text">
+      <h2><span class="text-dark">À</span> propos</h2>
+      <span class="underline" aria-hidden="true"></span>
+      <p>
+        Chez <strong>Naftal Khadamat</strong>, nous proposons des services numériques intelligents,
+        pratiques et accessibles à tous les automobilistes algériens — avec une approche axée
+        sur la simplicité, l'efficacité et l'innovation.
+      </p>
+      <button class="btn" id="open-modal" aria-haspopup="dialog" aria-controls="naftal-modal">En savoir plus</button>
+    </div>
+
+    <div class="about-images">
+      <img src="img/img1.jpg" alt="Station-service Naftal moderne" class="img-back" />
+      <img src="img/naftal_spa.jpeg" alt="Stand Naftal lors d’un évènement" class="img-front" />
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="naftal-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Fermer la fenêtre">&times;</button>
+      <img src="img/station.jpg" alt="" class="modal-img" />
+      <div class="modal-text">
+        <h2 id="modal-title">Naftal SPA</h2>
+        <div id="modal-desc" class="modal-scroll">
+          <p>
+            Naftal est une société par actions (SPA) au capital social de 160 000 000 000,00 DA.
+            Fondée en 1982 et filiale à 100% du Groupe Sonatrach, elle est rattachée à l’activité
+            commercialisation. Sa mission principale : la distribution et la commercialisation des
+            produits pétroliers et dérivés sur le marché national.
+          </p>
+          <ul>
+            <li>Enfûtage des GPL</li>
+            <li>Formulation des bitumes</li>
+            <li>Distribution, stockage et commercialisation : carburants, GPL, lubrifiants, bitumes, pneumatiques, produits spéciaux</li>
+            <li>Transport des produits pétroliers</li>
+          </ul>
+          <p>
+            Pour assurer la disponibilité des produits, Naftal mobilise le cabotage, les pipelines, le rail et la route.
+            Dans une logique d’amélioration continue, l’organisation évolue par lignes de produits (bitumes, lubrifiants, réseau, logistique, GPL, pneumatique, aviation, marine).
+          </p>
+          <p>
+            Naftal fournit près de 13,3 millions de tonnes de produits pétroliers par an, avec une demande en croissance constante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="section-card container">
+    <div class="section-header">
+      <div>
+        <h2><span class="text-dark">Nos</span> services</h2>
+        <span class="underline" aria-hidden="true"></span>
+      </div>
+      <div class="arrow-group" aria-label="Navigation des services">
+        <button id="services-prev" class="arrow-btn" aria-label="Voir les précédents">‹</button>
+        <button id="services-next" class="arrow-btn" aria-label="Voir les suivants">›</button>
+      </div>
+    </div>
+
+    <div class="services-wrapper" id="services-wrapper">
+      <div class="services-list" id="services-list">
+        <article class="service-card">
+          <img src="img/carburants.png" alt="Icône Carburants" />
+          <h3>Carburants</h3>
+          <p>Essence et gasoil disponibles dans tout notre réseau.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/gaz.png" alt="Icône Gaz Butane" />
+          <h3>Gaz Butane</h3>
+          <p>Bouteilles de gaz pour usage domestique.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/Détendeur 2022.png" alt="Icône Détendeur de gaz butane" />
+          <h3>Détendeur de gaz</h3>
+          <p>Régulateurs sécurisés pour une utilisation sans risque.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/Lubrifiants.png" alt="Icône Lubrifiants" />
+          <h3>Lubrifiants</h3>
+          <p>Huiles moteur pour véhicules essence et diesel.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/Pneumatiques.png" alt="Icône Pneumatiques" />
+          <h3>Pneumatiques</h3>
+          <p>Vente et entretien de pneus de qualité.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/Spray-WF.png" alt="Icône Produits d’entretien" />
+          <h3>Produits d’entretien</h3>
+          <p>Nettoyage et entretien pour votre véhicule.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/LDR ICONE.PNG" alt="Icône Liquide de refroidissement" />
+          <h3>Liquide de refroidissement</h3>
+          <p>Prévenez la surchauffe du moteur.</p>
+        </article>
+        <article class="service-card">
+          <img src="img/batterie 1 .png" alt="Icône Batteries" />
+          <h3>Batteries</h3>
+          <p>Grand choix avec assistance à l’installation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section-card container download-section">
+    <div class="download-content">
+      <div class="download-info">
+        <h2 class="download-text">Profitez d'une expérience rapide et intuitive avec l'application <span class="text-dark">Naftal Khadamat</span>.</h2>
+        <div class="features">
+          <div class="feature-item">
+            <img src="img/geo.jpg" alt="Géolocalisation" />
+            <span>Géolocalisation</span>
+          </div>
+          <div class="feature-item">
+            <img src="img/mapp.jpg" alt="Itinéraire" />
+            <span>Itinéraire</span>
+          </div>
+          <div class="feature-item">
+            <img src="img/carapp.jpg" alt="Services & Produits" />
+            <span>Services/Produits</span>
+          </div>
+          <div class="feature-item">
+            <img src="img/promo.jpg" alt="Promotion" />
+            <span>Promotion</span>
+          </div>
+        </div>
+        <a class="btn btn-primary btn-pill" href="https://play.google.com/store/apps/details?id=com.naftal.apps.naftalkhadamat&hl=fr" target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+          Télécharger
+        </a>
+      </div>
+
+      <div class="download-showcase">
+        <img src="img/app2.png" class="download-image" alt="Aperçu de l'application Naftal Khadamat" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (Chat inside the card) -->
+<section id="faq" class=" container faq-chat" aria-label="Foire aux questions">
+  <div class="faq-intro-card" id="faqCard" role="region" aria-labelledby="faq-intro-title">
+    <div class="faq-intro-windowbar" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <!-- Intro content (hidden once started) -->
+    <div class="faq-intro-body">
+      <img src="img/Logo.png" alt="Naftal Khadamat" class="faq-intro-logo" />
+      <h3 id="faq-intro-title">Naftal Khadamat</h3>
+      <p class="faq-intro-copy">
+        Des questions fréquentes ? Cliquez sur <strong>Commencer</strong>, choisissez une
+        <strong>catégorie</strong>  puis sélectionnez votre question.
+      </p>
+      <button class="btn btn-primary btn-pill" id="faqStartBtn">Commencer</button>
+    </div>
+
+    <!-- Chat container (appears inside the card) -->
+    <div class="faq-card-chat" id="faqCardChat" hidden>
+      <div class="faq-thread" id="faqThread" aria-live="polite" aria-relevant="additions"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Testimonials -->
+  <section id="testimonials" class=" container testimonials-section">
+    <h2>Avis de nos clients</h2>
+    <span class="underline" class="underline-2" aria-hidden="true"></span>
+    <p id="testimonial-text">"Grâce à l’application Naftal Khadamat, trouver une station est devenu si simple ! J’adore les mises à jour des services en temps réel."</p>
+    <div class="testimonial-carousel" aria-label="Témoignages">
+      <button id="prev-testimonial" class="arrow-btn" aria-label="Témoignage précédent">‹</button>
+      <div class="testimonial-photo">
+        <img src="img/pdp.png" alt="Photo de profil du client" />
+      </div>
+      <button id="next-testimonial" class="arrow-btn" aria-label="Témoignage suivant">›</button>
+    </div>
+    <p class="testimonial-name">Ali Benali</p>
+    <p class="testimonial-role">Client, Algérie</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section" aria-label="Contactez-nous">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p class="contact-subtitle">Nous sommes là pour répondre à toutes vos questions.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:support@naftal.com">support@naftal.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <a href="tel:0565650000">0565650000</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <address>BP 73, Route des Dunes, Chéraga</address>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-logo">
+        <a class="logo" href="#accueil" aria-label="Naftal Khadamat">
+        <img src="img/Logo.png" alt="Logo Naftal Khadamat" />
+      </a>
+        <p>Naftal Khadamat — Votre accès rapide aux stations et services Naftal partout en Algérie.</p>
+        <div class="social-icons" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com/NaftalSpaNews/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/naftal-spa" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/Naftal_Spa" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/@naftalspa-2127" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Liens de bas de page">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#download">Téléchargements</a></li>
+          <li><a href="#contact">Contactez-nous</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 Naftal. Tous droits réservés.</span>
+      <div class="legal-links">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d’utilisation</a>
+        <a href="#">Paramètres des cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js" defer></script>
+</body>
+</html>
